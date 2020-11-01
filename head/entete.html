@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='fr'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Site personnel de Guillaume Piccina">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link id="style" rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="image/g.png">
+    <title>Guillaume Piccina</title>
+    <script type="text/javascript">
+      /*Empecher le scroll dans le menu*/
+      function Fct1() {
+          document.body.style.overflow= "hidden";
+          document.getElementById('button_nav').style.display= "none";
+      }
+      function Fct2() {
+          document.getElementById('button').checked = false;
+          document.body.style.overflow= "visible";
+          document.getElementById('button_nav').style.display= "block";
+      }
+    </script>
+  </head>
+  <body>
+    <label for="button" id="button_nav">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <input type="checkbox" id="button" onclick="Fct1()"></input>
+    <div id="menu">
+      <div id="nom_menu">Guillaume<br/>Piccina</div>
+      <nav>
+        <ul>
+          <li><a href="index.php">Accueil</a></li>
+          <li><a href="Propos.php">À propos de moi</a></li>
+          <li><a href="Contact.php">Contact</a></li>
+          <li><a href="../projet/login.html">Mon projet</a></li>
+          <li><a href="CV.pdf">CV</a></li>
+        </ul>
+      </nav>
+      <!--<div id="selectLang"></div>-->
+    </div>
+    <label for="backgroundButton" id="backgroundMenu"></label>
+    <input type="button" id="backgroundButton" onclick="Fct2()"></input>
+    </div>
